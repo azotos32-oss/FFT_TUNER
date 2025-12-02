@@ -1,0 +1,7 @@
+build
+.vscode/*
+*.png
+*.txt
+!CMakeLists.txt
+backup.c 
+e_link.c
