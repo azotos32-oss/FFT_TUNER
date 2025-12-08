@@ -47,7 +47,7 @@ int second_highest_bin_amplitude_index()
     int max2 = -1;        // index of second highest
     float amp1 = -1.0f;   // highest amplitude
     float amp2 = -1.0f;   // second highest amplitude
-    for (int q = 0; q < BIN_COUNT - 1; q++)
+    for (int q = 13; q < BIN_COUNT - 1; q++)
     {
         float A = bins[q].amplitude;
 
@@ -102,6 +102,10 @@ int main() {
         } else {
             freq = index * 4;
         }
+        if (index < 41.0f){
+            freq = index * 4.0f;
+        }
+        printf("-----------------------------------------------------------------------\n");
         printf("Second Dominant Frequency: %d Hz with Amplitude: \n", index2);
         printf("Dominant Frequency: %d Hz with Amplitude: %f\n", index, bins[index].amplitude);
         printf("Estimated Frequency: %f Hz\n", freq);
