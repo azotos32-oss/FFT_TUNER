@@ -57,6 +57,7 @@ target_link_libraries(
     hardware_adc 
     hardware_timer
     hardware_spi
+    hardware_i2c
     pico_fft
 )
 
